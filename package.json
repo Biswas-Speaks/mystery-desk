@@ -1,0 +1,30 @@
+{
+  "name": "ai-mystery-room",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently -n api,web \"npm run dev -w server\" \"npm run dev -w client\"",
+    "build": "npm run build -w client",
+    "test": "npm run test:unit && npm run test:integration",
+    "test:e2e": "playwright test",
+    "lint": "eslint .",
+    "test:unit": "node --test tests/unit/*.test.js",
+    "test:integration": "npm run test -w server",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "setup:env": "node scripts/setup-env.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "eslint": "^9.39.0",
+    "@eslint/js": "^9.39.0",
+    "globals": "^16.5.0",
+    "eslint-plugin-react-hooks": "^7.0.0",
+    "@playwright/test": "^1.56.0",
+    "prettier": "^3.6.0"
+  }
+}

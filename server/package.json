@@ -1,0 +1,25 @@
+{
+  "name": "mystery-server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.19.0",
+    "zod": "^4.1.0",
+    "groq-sdk": "^0.34.0",
+    "dotenv": "^17.2.0",
+    "cors": "^2.8.5",
+    "helmet": "^8.1.0",
+    "express-rate-limit": "^8.1.0"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.0",
+    "supertest": "^7.1.0",
+    "mongodb-memory-server": "^10.2.0"
+  }
+}

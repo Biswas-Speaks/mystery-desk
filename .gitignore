@@ -1,0 +1,12 @@
+node_modules/
+.codex/
+.aws/
+dist/
+.env
+.env.*
+!.env.example
+.npm-cache/
+*.log
+coverage/
+test-results/
+playwright-report/

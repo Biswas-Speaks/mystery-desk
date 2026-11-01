@@ -1,0 +1,12 @@
+node_modules
+dist
+.git
+.codex
+.npm-cache
+SPEC.md
+package-lock.json
+coverage
+test-results
+playwright-report
+config/**/.env
+config/**/.env.*
