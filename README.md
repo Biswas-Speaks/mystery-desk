@@ -1,6 +1,8 @@
-# AI Mystery Room
+# Mystery Desk
 
-A fictional detective game built with React, Vite, Tailwind, Express, MongoDB Atlas, and server-only Groq. The product contract is [SPEC.md](SPEC.md).
+An AI-powered detective game that turns your ideas into unique mysteries. Investigate suspects, uncover clues, and make one final accusation. Built with React, Express, MongoDB, and Groq.
+
+The product contract is [SPEC.md](SPEC.md).
 
 ## Quick start
 
